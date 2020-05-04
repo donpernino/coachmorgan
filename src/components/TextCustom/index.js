@@ -17,7 +17,7 @@ function TextCustom(props) {
 
     const font = setFontType(props.type ? props.type : 'regular');
 
-    const style = [{ fontFamily: font }, style || {}]
+    const style = [{ fontFamily: font }, props.style || {}]
 
     return (
         <Text style={style}>
