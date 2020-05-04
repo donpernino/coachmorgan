@@ -30,7 +30,9 @@ export function DrawerContent(props) {
             <DrawerContentScrollView {...props} style={{paddingTop: 0}}>
                 <View style={styles.drawerContent}>
                     <View style={styles.userInfoSection}>
-                        <View style={{ flexDirection:'row' }}>
+                        <View
+                            style={{ flexDirection:'row' }}
+                        >
                             <Avatar.Image 
                                 source={{
                                     uri: 'http://thibaut-pernin.com/static/media/avatar.1469253e.png'

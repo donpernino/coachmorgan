@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
           marginBottom: 25,
       },
       card: {
-          height: 235,
+          height: 245,
           backgroundColor: bgGrayColor,
           shadowColor: "#000",
           shadowOffset: {
@@ -121,13 +121,15 @@ function ProfileScreen({ navigation }) {
                     <Text type="bold" style={{ fontSize: 18, marginBottom: 25, color: "white" }}>Aujourd'hui</Text>
                     <View style={{ display: "flex", flexDirection: "column" }}>
                         <View style={{ display: "flex", flexDirection: "row" }}>
-                            <Text type="medium" style={{ fontSize: 14, marginBottom: 20, color: "white", backgroundColor: pinkColor, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", marginRight: 10, width: 28, height: 28 }}>3</Text>
+                            <Text type="medium" style={{ fontSize: 14, marginBottom: 20, color: "white", backgroundColor: pinkColor, borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", marginRight: 10, width: 28, height: 28 }}>3</Text>
                             <Text type="medium" style={{ fontSize: 16, marginBottom: 20, color: pinkColor }}>Jour 3</Text>
                         </View>
                     </View>
                     <Text type="medium" style={{ fontSize: 16, marginBottom: 15, color: "white" }}>Résumé :</Text>
                         {exercises.map((exercise, index) => (
-                            <View style={{
+                            <View
+                                key={index}
+                                style={{
                                 display: "flex",
                                 alignItems: "center",
                                 flexDirection: "row",
@@ -142,7 +144,8 @@ function ProfileScreen({ navigation }) {
                                 shadowRadius: 2.22,
                                 elevation: 3,
                                 borderRadius: 6
-                            }}>
+                                }}
+                            >
                                 <Image
                                     source={exercise.cover}
                                     style={{

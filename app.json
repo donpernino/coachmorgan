@@ -23,6 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "MVP pour Morgan Production",
+    "githubUrl": "https://github.com/donpernino/coachmorgan"
   }
 }

@@ -39,11 +39,13 @@ function Header({navigation}) {
                 onPress={() => {navigation.navigate('Home')}}
             >
                 <View style={{
-                    borderRadius: "50%",
+                    borderRadius: 30,
                     backgroundColor: "rgba(106,120,255,0.5)",
                     width: 60,
                     height: 60,
                     display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
                     marginRight: 10,
                     shadowColor: "#000",
                     shadowOffset: {
